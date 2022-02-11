@@ -1,5 +1,10 @@
 /* ///////////////////////////////////////////////////////////// */
 /* header start */
+#header {
+    position: relative;
+    z-index: 900 !important;
+}
+
 #header .header-btn-collapse-nav {
     background: #F85F00 !important;
 }
@@ -31,7 +36,8 @@
     color: #fff !important;
     background-color: transparent !important;
 }
-.translation-pageBox-p{
+
+.translation-pageBox-p {
     font-size: 16px !important;
 }
 
@@ -346,6 +352,23 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
 
     .cbox-3 {
         filter: none !important;
+    }
+    .modal-box{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.507) !important;
+        z-index: 1000 !important;
+        
+        justify-content: center !important;
+        align-items: center !important;
+        display: none;
+    }
+    .modal-box .form-int-back{
+        width: 400px !important;   
+        animation-name: fadeIn !important;
     }
 }
 
