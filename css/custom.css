@@ -169,14 +169,17 @@ section.section-counters,
 .services-box .card:hover .card-text {
     color: #fff !important;
 }
+
 .box-shadow-1:before {
     border-radius: 10px !important;
 }
-.services-box .btn-srv{
+
+.services-box .btn-srv {
     background: #F85F00 !important;
     color: #fff !important;
 }
-.services-box .card:hover .btn-srv{
+
+.services-box .card:hover .btn-srv {
     background: #fff !important;
     color: #F85F00 !important;
 }
@@ -185,8 +188,32 @@ section.section-counters,
 /* FAQ page start */
 
 .page-header.page-header-modern.page-header-lg {
-    padding: 130px 0 !important;
+    padding: 150px 0 !important;
 }
+
+.faq-page .page-header {
+    background: #f16107cc url('../images/faq-fon.jpg')no-repeat center center / cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+html .faq-page .toggle-primary .toggle.active .toggle-title {
+    background-color: #F85F00 !important;
+    border-color: #F85F00 !important;
+    color: #FFF !important;
+}
+
+html .faq-page .toggle-primary .toggle .toggle-title {
+    color: #F85F00 !important;
+    border-left-color: #F85F00 !important;
+    border-right-color: #F85F00 !important;
+}
+
+html .faq-page .toggle>.toggle-content>p {
+    margin-bottom: 0;
+    padding: 10px 20px;
+}
+
 /* ********************************************************************* */
 /* Media */
 @media (min-width: 992px) {
