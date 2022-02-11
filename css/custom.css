@@ -8,6 +8,30 @@
     display: none !important;
 }
 
+#header .header-nav-top .nav>li>a,
+#header .header-nav-top .nav>li>span {
+    color: #fff !important;
+    background: #F85F00 !important;
+}
+
+#header .header-nav-top .dropdown-menu {
+    min-width: auto;
+    color: #fff !important;
+    background: #F85F00 !important;
+    border-radius: 0.25rem !important;
+}
+
+#header .header-nav-top .dropdown-menu a {
+    color: #fff !important;
+    padding: 6px 10px !important;
+}
+
+.header-nav-top .dropdown-item:focus,
+.header-nav-top .dropdown-item:hover {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
 /* #header .header-nav.header-nav-line nav > ul > li > a{
     min-height: unset !important;
     height: unset !important;
@@ -260,6 +284,12 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
 
 .section-countries-translation-page .country-name h5 {
     margin-bottom: 0 !important;
+}
+
+.translation-page .page-header {
+    background: #f16107cc url('../images/translation-fon.jpg')no-repeat center center / cover !important;
+    background-blend-mode: multiply !important;
+    background-attachment: fixed !important;
 }
 
 /* ********************************************************************* */

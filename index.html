@@ -55,7 +55,7 @@
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-top-0">
-					<div class="header-top">
+					<!-- <div class="header-top">
 						<div class="container">
 							<div class="header-row py-2">
 								<div class="header-column justify-content-start">
@@ -91,7 +91,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
@@ -125,7 +125,7 @@
 														</a>
 														<ul class="dropdown-menu">
 															<li class="dropdown-submenu icon-none">
-																<a class="dropdown-item" href="#">TRANSLATION</a>
+																<a class="dropdown-item" href="translation.html">TRANSLATION</a>
 															</li>
 															<li class="dropdown-submenu icon-none">
 																<a class="dropdown-item" href="#">APOSTILLE / AUTHENTICATION</a>
@@ -141,7 +141,7 @@
 														</a>
 													</li>
 													<li class="dropdown icon-none">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle" href="contact-page.html">
 															Contacts
 														</a>
 													</li>
@@ -153,21 +153,19 @@
 										</button>
 									</div>
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<div class="header-nav-feature header-nav-features-search d-inline-flex">
-											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
-											<div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
-												<form role="search" action="page-search-results.html" method="get">
-													<div class="simple-search input-group">
-														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-														<span class="input-group-append">
-															<button class="btn" type="submit">
-																<i class="fas fa-search header-nav-top-icon"></i>
-															</button>
-														</span>
+                                        <nav class="header-nav-top">
+											<ul class="nav nav-pills">
+												<li class="nav-item dropdown nav-item-left-border  d-sm-block nav-item-left-border-remove nav-item-left-border-md-show">
+													<a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														EN
+													</a>
+													<div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+														<a class="dropdown-item" href="#">UZ</a>
+														<a class="dropdown-item" href="#">RU</a>
 													</div>
-												</form>
-											</div>
-										</div>
+												</li>
+											</ul>
+										</nav>
 									</div>
 								</div>
 							</div>
