@@ -36,6 +36,10 @@ section.section-counters,
     margin: 0 !important;
 }
 
+section.translation-pageBox {
+    margin: 0 !important;
+}
+
 .section-stepBox .process .process-step-circle {
     border-color: #F85F00 !important;
 }
@@ -189,6 +193,7 @@ section.section-counters,
 
 .page-header.page-header-modern.page-header-lg {
     padding: 150px 0 !important;
+    margin: 0 !important;
 }
 
 .faq-page .page-header {
@@ -212,6 +217,49 @@ html .faq-page .toggle-primary .toggle .toggle-title {
 html .faq-page .toggle>.toggle-content>p {
     margin-bottom: 0;
     padding: 10px 20px;
+}
+
+/* *************************************************************************** */
+/* translation page start */
+html body .translation-pageBox .tabs .nav-tabs .nav-link:hover,
+html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
+    border-top-color: #F85F00 !important;
+    color: #F85F00 !important;
+}
+
+.section-countries-translation-page .cbox-3 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.section-countries-translation-page .hover-overlay {
+    height: 100% !important;
+}
+
+.section-countries-translation-page .hover-overlay .img-fluid {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.section-countries-translation-page .cbox-3 {
+    width: 100% !important;
+    height: 100px !important;
+}
+
+.section-countries-translation-page .country-name {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-countries-translation-page .country-name h5 {
+    margin-bottom: 0 !important;
 }
 
 /* ********************************************************************* */
