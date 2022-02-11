@@ -180,6 +180,13 @@ section.section-counters,
     background: #fff !important;
     color: #F85F00 !important;
 }
+
+/* ****************************************************************** */
+/* FAQ page start */
+
+.page-header.page-header-modern.page-header-lg {
+    padding: 130px 0 !important;
+}
 /* ********************************************************************* */
 /* Media */
 @media (min-width: 992px) {
