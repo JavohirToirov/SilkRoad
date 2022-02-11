@@ -273,3 +273,9 @@ html .faq-page .toggle>.toggle-content>p {
         padding: 0 20px !important;
     }
 }
+
+@media (max-width: 375px) {
+    .testimonial.testimonial-with-quotes blockquote p {
+        padding: 15px 0 0 0 !important;
+    }
+}
