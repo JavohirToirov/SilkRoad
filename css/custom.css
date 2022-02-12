@@ -64,6 +64,7 @@
 .form-group .inp-border:focus {
     border: 1px solid #F85F00 !important;
 }
+
 .modal-footer {
     display: block !important;
     text-align: center !important;
@@ -73,6 +74,7 @@
     border-bottom-left-radius: calc(0.3rem - 1px);
     padding-bottom: 20px !important;
 }
+
 .form-box {
     padding: 20px 10px !important;
 }
@@ -86,19 +88,45 @@
     line-height: initial !important;
 }
 
-#header .header-nav.header-nav-line nav .telphone-num a{
+#header .header-nav.header-nav-line nav .telphone-num a {
     background: #F85F00 !important;
     color: #fff !important;
     height: auto !important;
     border-radius: 5px !important;
     border: 1px dashed #F85F00 !important;
 }
-#header .header-nav.header-nav-line nav .telphone-num a:hover{
-    background: #fff!important;
+
+#header .header-nav.header-nav-line nav .telphone-num a:hover {
+    background: #fff !important;
     color: #F85F00 !important;
     border: 1px dashed #F85F00 !important;
 }
 
+/* ****************************************************************************** */
+/* right sidebar button */
+.right-sidebar-btn {
+    text-transform: uppercase !important;
+    transform: translateY(-50%) rotate(-90deg) !important;
+    line-height: 1.1;
+    position: fixed !important;
+    top: 50%;
+    right: -52px !important;
+    border: none !important;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.right-sidebar-btn a {
+    border-radius: 5px 5px 0 0 !important;
+    letter-spacing: 1 !important;
+}
+
+.right-sidebar-btn a:focus {
+    background: #fff !important;
+    color: #F85F00 !important;
+}
+
+/* ****************************************************************************** */
 section.section-stepBox {
     margin: 0 !important;
     padding: 0 !important;
@@ -372,11 +400,13 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     border-color: #0088CC #0088CC #006699;
     color: #FFF;
 }
-.translation-page-carusel .modal-header{
+
+.translation-page-carusel .modal-header {
     text-align: center !important;
     background: #F9F9F9 !important;
     display: block !important;
 }
+
 /*box shadow animation*/
 .pulse {
     background: #F85F00;
@@ -455,12 +485,13 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     #header .header-nav-main nav>ul>li>a {
         font-size: 16px !important;
     }
+
     #header .header-nav-main nav {
         display: flex !important;
         align-items: center !important;
     }
-    
-    #header .header-nav.header-nav-line.header-nav-top-line.header-nav-top-line-with-border nav > ul > li > a:before {
+
+    #header .header-nav.header-nav-line.header-nav-top-line.header-nav-top-line-with-border nav>ul>li>a:before {
         display: none !important;
     }
 }
@@ -520,6 +551,9 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
 
     section.header-section {
         padding: 0 !important;
+    }
+    .right-sidebar-btn{
+        display: none !important;
     }
 }
 
