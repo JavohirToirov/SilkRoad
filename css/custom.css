@@ -41,6 +41,11 @@
     font-size: 16px !important;
 }
 
+/* ************************************************************ */
+.form-control {
+    height: auto !important;
+}
+/* ************************************************************ */
 /* #header .header-nav.header-nav-line nav > ul > li > a{
     min-height: unset !important;
     height: unset !important;
