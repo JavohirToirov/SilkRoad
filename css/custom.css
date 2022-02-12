@@ -45,6 +45,11 @@
 .form-control {
     height: auto !important;
 }
+
+.services-boxBlock {
+    box-shadow: 0 30px 90px #bbb !important;
+}
+
 /* ************************************************************ */
 /* #header .header-nav.header-nav-line nav > ul > li > a{
     min-height: unset !important;
@@ -130,6 +135,7 @@ html #header .right-sidebar-btn a:active .header-buttonts a:active {
     background: #fff !important;
     color: #F85F00 !important;
 }
+
 html #header .right-sidebar-btn a:focus .header-buttonts a:focus {
     background: #fff !important;
     color: #F85F00 !important;
@@ -483,7 +489,9 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     #header .header-nav.header-nav-line.header-nav-top-line.header-nav-top-line-with-border nav>ul>li>a:before {
         display: none !important;
     }
-    #header .header-nav.header-nav-line nav > ul > li > a, #header .header-nav.header-nav-line nav > ul > li:hover > a {
+
+    #header .header-nav.header-nav-line nav>ul>li>a,
+    #header .header-nav.header-nav-line nav>ul>li:hover>a {
         min-height: 45px !important;
     }
 }
@@ -513,7 +521,7 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
         display: none !important;
     }
 
-    
+
 }
 
 @media (max-width: 475px) {
@@ -522,11 +530,12 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     }
 }
 
-@media (max-width: 414px) { 
+@media (max-width: 414px) {
     section.header-section {
         padding: 0 !important;
     }
-    .right-sidebar-btn{
+
+    .right-sidebar-btn {
         display: none !important;
     }
 }
@@ -537,6 +546,4 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     }
 }
 
-@media (max-width: 350px) {
-   
-}
+@media (max-width: 350px) {}
