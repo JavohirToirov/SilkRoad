@@ -60,9 +60,11 @@
 .form-row .inp-border {
     border: 1px solid #D7DAE1 !important;
 }
-.form-row .inp-border:focus{
+
+.form-row .inp-border:focus {
     border: 1px solid #F85F00 !important;
 }
+
 .form-box {
     padding: 20px 10px !important;
 }
@@ -332,6 +334,23 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
 
 .header-buttonts .btn:nth-child(2) {
     margin-left: 20px !important;
+}
+
+.translation-pageheader-btn {
+    background: #F85F00 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+}
+
+.translation-pageheader-btn:hover {
+    background: #fff !important;
+    color: #F85F00 !important;
+}
+
+.translation-page-carusel .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"] {
+    background-color: #F85F00 !important;
+    border-color: #0088CC #0088CC #006699;
+    color: #FFF;
 }
 
 /*box shadow animation*/

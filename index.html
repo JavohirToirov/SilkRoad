@@ -196,7 +196,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-5">
+							<div class="col-lg-4">
 								<div class="modal-box">
 									<div class="slider-contact-form-wrapper form-int-back  rounded  appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000" data-appear-animation-duration="1s">
 										<div class="model-content">
@@ -222,16 +222,7 @@
 															</div>
 															<div class="form-group col-lg-12">
 																<select required="" class="form-control inp-border" name="language" id="" style="background-color: #fff">
-																	<option value="0" selected="">Original language?</option>
-																	<option value="1"> Russian </option>
-																	<option value="2"> English </option>
-																	<option value="3"> Chinese </option>
-																	<option value="4"> Japanese </option>
-																</select>
-															</div>
-															<div class="form-group col-lg-12">
-																<select required="" class="form-control inp-border" name="language" id="" style="background-color: #fff">
-																	<option value="0" selected="">Translation language?</option>
+																	<option value="0" selected="">Which language?</option>
 																	<option value="1"> Russian </option>
 																	<option value="2"> English </option>
 																	<option value="3"> Chinese </option>
@@ -242,11 +233,11 @@
 																<input type="file" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control inp-border" name="phone" id="phone" placeholder="Your Phone..." required>
 															</div>
 														</div>
-														<div class="form-row">
+														<!-- <div class="form-row">
 															<div class="form-group col mb-4">
 																<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control inp-border" name="message" placeholder="Your Message..." required></textarea>
 															</div>
-														</div>
+														</div> -->
 														<div class="form-row">
 															<div class="form-group col text-center">
 																<input type="submit" value="SUBMIT" class="btn btn-submit px-5 py-2" data-loading-text="Loading...">
@@ -671,6 +662,7 @@
 		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src="vendor/vide/jquery.vide.min.js"></script>
 		<script src="vendor/vivus/vivus.min.js"></script>
+		<script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
@@ -681,11 +673,15 @@
 
 		<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-church.js"></script>
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
 
 		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 		<script>
@@ -699,59 +695,78 @@
 
 			*/
 
-			function initializeGoogleMaps() {
-				// Map Markers
-				var mapMarkers = [{
-					address: "New York, NY 10017",
-					html: "<strong>New York Office</strong><br>New York, NY 10017",
-					icon: {
-						image: "img/pin.png",
-						iconsize: [26, 46],
-						iconanchor: [12, 46]
-					},
-					popup: true
-				}];
+			// Map Markers
+			var mapMarkers = [{
+				address: "New York, NY 10017",
+				html: "<strong>Porto Church</strong><br>New York, NY 10017<br><br><a href='#' onclick='mapCenterAt({latitude: 40.75198, longitude: -73.96978, zoom: 16}, event)'>[+] zoom here</a>",
+				icon: {
+					image: "img/demos/church/others/pin.png",
+					iconsize: [28, 35],
+					iconanchor: [28, 35]
+				}
+			}];
 
-				// Map Initial Location
-				var initLatitude = 40.75198;
-				var initLongitude = -73.96978;
+			// Map Initial Location
+			var initLatitude = 40.75198;
+			var initLongitude = -73.96978;
 
-				// Map Extended Settings
-				var mapSettings = {
-					controls: {
-						draggable: (($.browser.mobile) ? false : true),
-						panControl: true,
-						zoomControl: true,
-						mapTypeControl: true,
-						scaleControl: true,
-						streetViewControl: true,
-						overviewMapControl: true
-					},
-					scrollwheel: false,
-					markers: mapMarkers,
-					latitude: initLatitude,
-					longitude: initLongitude,
-					zoom: 16
-				};
+			// Map Extended Settings
+			var mapSettings = {
+				controls: {
+					draggable: (($.browser.mobile) ? false : true),
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkers,
+				latitude: initLatitude,
+				longitude: initLongitude,
+				zoom: 14
+			};
 
-				var map = $('#googlemaps').gMap(mapSettings),
-					mapRef = $('#googlemaps').data('gMap.reference');
-
-				// Styles from https://snazzymaps.com/
-				var styles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}];
-
-				var styledMap = new google.maps.StyledMapType(styles, {
-					name: 'Styled Map'
-				});
-
-				mapRef.mapTypes.set('map_style', styledMap);
-				mapRef.setMapTypeId('map_style');
+			// Map text-center At
+			var mapCenterAt = function(options, e) {
+				e.preventDefault();
+				$('#googlemaps').gMap("centerAt", options);
 			}
 
-			// Initialize Google Maps when element enter on browser view
-			theme.fn.intObs( '.google-map', 'initializeGoogleMaps()', {} );
+			// Custom Init Map
+			var initMapAt = function(options, e) {
+				e.preventDefault();
+				$('#googlemaps').animate({
+					height: 350
+				}, 300, function(){
+					setTimeout(function(){
+						$('.custom-view-our-location').animate({
+							bottom: '-160px'
+						}, 300);
+					}, 1000);
+					
+					var map = $('#googlemaps').gMap(mapSettings),
+						mapRef = $('#googlemaps').data('gMap.reference');
+
+					// Styles from https://snazzymaps.com/
+					var styles = [{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#e94f3f"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"gamma":"0.50"},{"hue":"#ff4a00"},{"lightness":"-79"},{"saturation":"-86"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"hue":"#ff1700"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"color":"#e74231"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#4d6447"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"color":"#f0ce41"},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"color":"#363f42"}]},{"featureType":"road","elementType":"all","stylers":[{"color":"#231f20"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#6c5e53"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#313639"},{"visibility":"off"}]},{"featureType":"transit","elementType":"labels.text","stylers":[{"hue":"#ff0000"}]},{"featureType":"transit","elementType":"labels.text.fill","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0e171d"}]}];
+
+					var styledMap = new google.maps.StyledMapType(styles, {
+						name: 'Styled Map'
+					});
+
+					mapRef.mapTypes.set('map_style', styledMap);
+					mapRef.setMapTypeId('map_style');
+				});
+			}
+
+			
 
 		</script>
+
+		
+
 
 	</body>
 </html>
