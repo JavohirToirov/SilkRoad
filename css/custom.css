@@ -230,7 +230,7 @@ section.translation-pageBox {
 }
 
 .faq-page .page-header {
-    background: #f16107cc url('../images/faq-fon.jpg')no-repeat center center / cover;
+    background-color: rgba(0, 0, 0, 0.452);
     background-blend-mode: multiply;
     background-attachment: fixed;
 }
@@ -295,11 +295,6 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     margin-bottom: 0 !important;
 }
 
-.translation-page .page-header {
-    background: #f16107cc url('../images/translation-fon.jpg')no-repeat center center / cover !important;
-    background-blend-mode: multiply !important;
-    background-attachment: fixed !important;
-}
 
 .header-buttonts {
     justify-content: center;
@@ -362,6 +357,11 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
         -moz-box-shadow: 0 0 0 0 rgba(255, 232, 1, 0);
         box-shadow: 0 0 0 0 rgba(255, 232, 1, 0);
     }
+}
+
+.footer-btn{
+    background: #F85F00 !important;
+    color: #fff !important;
 }
 
 /* ********************************************************************* */
@@ -432,20 +432,24 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     }
 }
 
-@media (max-width: 414px){
-    .header-buttonts{
+@media (max-width: 414px) {
+    .header-buttonts {
         flex-direction: column !important;
     }
-    .header-buttonts .btn:nth-child(2){
+
+    .header-buttonts .btn:nth-child(2) {
         margin-left: 0 !important;
     }
-    .header-buttonts .btn{
+
+    .header-buttonts .btn {
         width: 250px !important;
     }
-    .header-buttonts .btn:nth-child(1){
+
+    .header-buttonts .btn:nth-child(1) {
         margin-bottom: 30px !important;
     }
-    section.header-section{
+
+    section.header-section {
         padding: 0 !important;
     }
 }
@@ -456,7 +460,7 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
     .header-buttonts .btn {
         width: 100% !important;
     }
