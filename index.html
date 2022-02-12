@@ -176,7 +176,7 @@
 
 			<div role="main" class="main">
 
-				<section class="section section-overlay-opacity section-overlay-opacity-scale-2 border-0 m-0" style="background-image: url(images/header-fonimg.jpg); background-size: cover; background-position: center;">
+				<section class="section header-section section-overlay-opacity section-overlay-opacity-scale-2 border-0 m-0" style="background-image: url(images/header-fonimg.jpg); background-size: cover; background-position: center;">
 					<div class="container py-5">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-lg-7 text-lg-left text-center mb-5 mb-lg-0">
@@ -185,68 +185,70 @@
 									</h1>
 									<h1 class="text-color-light font-weight-extra-bold text-8 mb-2 appear-animation" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0}">Remote document request</h1>
 									<h1 class="text-color-light font-weight-extra-bold text-8 mb-2 appear-animation" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">Apostille services</h1>
-									
+									<div class="header-buttonts mt-5">
+										<a href="tel:+1-832-310-8886" class="btn  mb-2 pulse">Call up !</a>
+										<a href="translation.html" class="btn  mb-2 pulse">Our services</a>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-5">
 								<div class="modal-box">
 									<div class="slider-contact-form-wrapper form-int-back  rounded p-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000" data-appear-animation-duration="1s">
-									<div class="row">
-										<div class="col text-center">
-											<h2 class="font-weight-semi-bold text-color-light text-6 mb-2">Translation cost</h2>
-										</div>
+										<div class="model-content">
+											<div class="row">
+												<div class="col text-center">
+													<h2 class="font-weight-semi-bold text-color-light text-6 mb-2">Translation cost</h2>
+												</div>
+									        </div>
+											<div class="row pt-3">
+												<div class="col">
+													<form class="contact-form form-style-2 form-errors-light" action="php/contact-form.php" method="POST">
+														<div class="contact-form-success alert alert-success d-none mt-4">
+															<strong>Success!</strong> Your message has been sent to us.
+														</div>
+															<div class="contact-form-error alert alert-danger d-none mt-4">
+															<strong>Error!</strong> There was an error sending your message.
+															<span class="mail-error-message text-1 d-block"></span>
+														</div>
+														
+														<div class="form-row">
+															<div class="form-group col-lg-12">
+																<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name..." required>
+															</div>
+															<div class="form-group col-lg-12">
+																<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required>
+															</div>
+															<div class="form-group col-lg-12">
+																<select required="" class="form-control" name="language" id="" style="background-color: #fff">
+																	<option value="0" selected="">Which language?</option>
+																	<option value="1"> Russian </option>
+																	<option value="2"> English </option>
+																	<option value="3"> Chinese </option>
+																	<option value="4"> Japanese </option>
+																</select>
+															</div>
+															<div class="form-group col-lg-12">
+																<input type="file" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required>
+															</div>
+														</div>
+														<div class="form-row">
+															<div class="form-group col mb-4">
+																<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" placeholder="Your Message..." required></textarea>
+															</div>
+														</div>
+														<div class="form-row">
+															<div class="form-group col text-center">
+																<input type="submit" value="SUBMIT" class="btn btn-submit px-5 py-2" data-loading-text="Loading...">
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+								        </div>
 									</div>
-									<div class="row pt-3">
-										<div class="col">
-											<form class="contact-form form-style-2 form-errors-light" action="php/contact-form.php" method="POST">
-												<div class="contact-form-success alert alert-success d-none mt-4">
-													<strong>Success!</strong> Your message has been sent to us.
-												</div>
-													<div class="contact-form-error alert alert-danger d-none mt-4">
-													<strong>Error!</strong> There was an error sending your message.
-													<span class="mail-error-message text-1 d-block"></span>
-												</div>
-												
-												<div class="form-row">
-													<div class="form-group col-lg-12">
-														<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name..." required>
-													</div>
-													<div class="form-group col-lg-12">
-														<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required>
-													</div>
-													<div class="form-group col-lg-12">
-														<select required="" class="form-control" name="language" id="" style="background-color: #fff">
-															<option value="0" selected="">Which language?</option>
-			                                                <option value="1"> Russian </option>
-			                                                <option value="2"> English </option>
-															<option value="3"> Chinese </option>
-															<option value="4"> Japanese </option>
-														</select>
-													</div>
-													<div class="form-group col-lg-12">
-														<input type="file" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required>
-													</div>
-												</div>
-												<div class="form-row">
-													<div class="form-group col mb-4">
-														<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" placeholder="Your Message..." required></textarea>
-													</div>
-												</div>
-												<div class="form-row">
-													<div class="form-group col text-center">
-														<input type="submit" value="SUBMIT" class="btn btn-submit px-5 py-2" data-loading-text="Loading...">
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								    </div>
 								</div>
 								
 							</div>
-							<!-- <button class="btn btn-modern btn-primary" data-toggle="modal" data-target="#defaultModal">
-								Launch Default Modal
-							</button> -->
 						</div>
 					</div>
 				</section>
