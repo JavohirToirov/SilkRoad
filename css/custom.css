@@ -57,19 +57,27 @@
     border-radius: 5px 5px 0 0 !important;
 }
 
-.form-row .inp-border {
+.form-group .inp-border {
     border: 1px solid #D7DAE1 !important;
 }
 
-.form-row .inp-border:focus {
+.form-group .inp-border:focus {
     border: 1px solid #F85F00 !important;
 }
-
+.modal-footer {
+    display: block !important;
+    text-align: center !important;
+    padding: 0 !important;
+    border-top: none !important;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    padding-bottom: 20px !important;
+}
 .form-box {
     padding: 20px 10px !important;
 }
 
-.section .form-int-back .btn-submit {
+.form-int-back .btn-submit {
     background: #F85F00 !important;
     color: #fff !important;
 }
@@ -78,6 +86,18 @@
     line-height: initial !important;
 }
 
+#header .header-nav.header-nav-line nav .telphone-num a{
+    background: #F85F00 !important;
+    color: #fff !important;
+    height: auto !important;
+    border-radius: 5px !important;
+    border: 1px dashed #F85F00 !important;
+}
+#header .header-nav.header-nav-line nav .telphone-num a:hover{
+    background: #fff!important;
+    color: #F85F00 !important;
+    border: 1px dashed #F85F00 !important;
+}
 
 section.section-stepBox {
     margin: 0 !important;
@@ -352,7 +372,11 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     border-color: #0088CC #0088CC #006699;
     color: #FFF;
 }
-
+.translation-page-carusel .modal-header{
+    text-align: center !important;
+    background: #F9F9F9 !important;
+    display: block !important;
+}
 /*box shadow animation*/
 .pulse {
     background: #F85F00;
@@ -430,6 +454,14 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
 
     #header .header-nav-main nav>ul>li>a {
         font-size: 16px !important;
+    }
+    #header .header-nav-main nav {
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    #header .header-nav.header-nav-line.header-nav-top-line.header-nav-top-line-with-border nav > ul > li > a:before {
+        display: none !important;
     }
 }
 
