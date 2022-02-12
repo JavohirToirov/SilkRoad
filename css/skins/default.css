@@ -13,15 +13,15 @@ a {
 }
 
 a:hover {
-	color: #0099e6;
+	color: #F85F00 !important;
 }
 
 a:focus {
-	color: #0099e6;
+	color: #F85F00 !important;
 }
 
 a:active {
-	color: #0077b3;
+	color: #F85F00 !important;
 }
 
 html .text-color-primary,
