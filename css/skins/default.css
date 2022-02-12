@@ -12,17 +12,17 @@ a {
 	color: #0088CC;
 }
 
-a:hover {
+/* a:hover {
 	color: #F85F00 !important;
 }
 
 a:focus {
 	color: #F85F00 !important;
-}
+} */
 
-a:active {
+/* a:active {
 	color: #F85F00 !important;
-}
+} */
 
 html .text-color-primary,
 html .text-primary {
