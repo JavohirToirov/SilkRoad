@@ -325,6 +325,17 @@ section.translation-pageBox {
     color: #F85F00 !important;
 }
 
+/* *************************************************************************** */
+.page-header.page-header-modern.page-header-lg {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ****************************************************************** */
 /* FAQ page start */
 
@@ -613,14 +624,17 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
         margin-left: 0 !important;
         margin-top: 10px !important;
     }
-    .header-btns{
+
+    .header-btns {
         display: flex;
         flex-direction: column !important;
     }
-    .header-btns .btn{
+
+    .header-btns .btn {
         width: 100% !important;
     }
-    .header-btns .btn:nth-child(2){
+
+    .header-btns .btn:nth-child(2) {
         margin-top: 10px !important;
     }
 }
