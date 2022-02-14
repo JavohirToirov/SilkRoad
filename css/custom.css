@@ -19,6 +19,27 @@
     background: #F85F00 !important;
 }
 
+.header-num a {
+    color: #000 !important;
+    font-size: 16px !important;
+}
+
+.header-num a:focus {
+    color: #F85F00 !important;
+}
+
+.header-num a:active {
+    color: #F85F00 !important;
+}
+
+.header-num a:hover {
+    color: #F85F00 !important;
+}
+
+.header-num {
+    display: none !important;
+}
+
 #header .header-nav-top .dropdown-menu {
     min-width: auto;
     color: #fff !important;
@@ -500,6 +521,14 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     #header .header-nav-main:not(.header-nav-main-mobile-dark) nav>ul>li>a.active {
         background: #F85F00 !important;
     }
+
+    .header-num {
+        display: block !important;
+    }
+
+    .header-nav-features {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -521,6 +550,22 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
         display: none !important;
     }
 
+    section.header-section {
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .header-buttonts {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .modal-dialog {
+        margin: 50px 10px 10px !important;
+    }
 
 }
 
@@ -538,6 +583,14 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     .right-sidebar-btn {
         display: none !important;
     }
+
+    .header-logo {
+        width: 120px !important;
+    }
+
+    .header-logo a img {
+        height: 40px !important;
+    }
 }
 
 @media (max-width: 375px) {
@@ -546,4 +599,18 @@ html body .translation-pageBox .tabs .nav-tabs li.active .nav-link {
     }
 }
 
-@media (max-width: 350px) {}
+@media (max-width: 350px) {
+    .header-num a {
+        color: #000 !important;
+        font-size: 14px !important;
+    }
+
+    .header-buttonts {
+        flex-direction: column !important;
+    }
+
+    .header-buttonts a:nth-child(2) {
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+    }
+}
