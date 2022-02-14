@@ -6388,11 +6388,11 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after {
 }
 
 .cursor-outer {
-	border-color: #0088CC;
+	border-color: red !important;
 }
 
 .cssload-thecube .cssload-cube:before {
-	background-color: #0088CC;
+	background-color: red !important;
 }
 
 .cssload-cube-progress {

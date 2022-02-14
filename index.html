@@ -51,7 +51,19 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
-	<body data-plugin-page-transition>
+	<body class="loading-overlay-showing" data-loading-overlay data-plugin-options="{'hideDelay': 500, 'effect': 'cubes'}">
+		
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="cssload-thecube">
+					<div class="cssload-cube cssload-c1"></div>
+					<div class="cssload-cube cssload-c2"></div>
+					<div class="cssload-cube cssload-c4"></div>
+					<div class="cssload-cube cssload-c3"></div>
+				</div>
+			</div>
+		</div>
+		
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-top-0">
@@ -160,7 +172,7 @@
 								<div class="d-flex flex-column justify-content-center h-100">
 									<h1 class="text-color-light font-weight-extra-bold text-lg-13 text-md-12 text-10 mb-2"><span class="typed-text"></span><span class="cursor">&nbsp;</span>
 									</h1>
-									<h1 class="text-color-light font-weight-extra-bold text-8 mb-2 appear-animation" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0}"> in Houston</h1>
+									<!-- <h1 class="text-color-light font-weight-extra-bold text-8 mb-2 appear-animation" data-plugin-animated-letters data-plugin-options="{'startDelay': 1500, 'minWindowWidth': 0}"> in Houston</h1> -->
 									<div class="header-buttonts mt-4">
 										<a href="#" data-toggle="modal" data-target="#formModal" class="btn translation-pageheader-btn font-weight-bold btn-py-2 btn-px-4 appear-animation pulse" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">Get quote</a>
 										<a href="tel:+1-832-310-8886" class="btn translation-pageheader-btn font-weight-bold btn-py-2 btn-px-4 appear-animation d-lg-none d-md-none d-sm-none d-block ml-3 pulse" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">Call up !</a>
