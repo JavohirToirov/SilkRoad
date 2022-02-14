@@ -188,9 +188,10 @@
 															<div class="form-group col-lg-12">
 																<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control inp-border" name="name" placeholder="Your Name..." required>
 															</div>
-															<div class="form-group col-lg-12">
-																<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control inp-border" name="phone" id="phone" placeholder="Your Phone..." required>
-															</div>
+															<div class="input-group flex-nowrap">
+																<span class="input-group-text" id="addon-wrapping">+1</span>
+																<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="20" class="form-control inp-border border-inp-grup" placeholder="Your Phone..." aria-label="Your Phone..." aria-describedby="addon-wrapping">
+															  </div>
 															<div class="form-group col-lg-12">
 																<select required="" class="form-control inp-border" name="language" id="" style="background-color: #fff">
 																	<option value="0" selected="">Which language?</option>
@@ -228,7 +229,7 @@
 					<a href="#" data-toggle="modal" data-target="#formModal" class="btn translation-pageheader-btn font-weight-bold btn-py-2 btn-px-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">For Info</a>
 				</div>
 				
-				<div class="container">
+				<div class="container modal-block">
 					<div class="row align-items-center">
 						<div class="col-sm-9">
 							<div class="modal fade form-int-back" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" style="display: none;" aria-hidden="true">
@@ -243,10 +244,11 @@
 												<div class="form-group col-lg-12">
 													<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control inp-border" name="name" placeholder="Your Name..." required>
 												</div>
-												<div class="form-group col-lg-12">
-													<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control inp-border" name="phone" id="phone" placeholder="Your Phone..." required>
-												</div>
-												<div class="form-group col-lg-12">
+												<div class="input-group flex-nowrap">
+													<span class="input-group-text" id="addon-wrapping">+1</span>
+													<input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="20" class="form-control inp-border" placeholder="Your Phone..." aria-label="Your Phone..." aria-describedby="addon-wrapping">
+												  </div>
+												<!-- <div class="form-group col-lg-12">
 													<select required="" class="form-control inp-border" name="language" id="" style="background-color: #fff">
 														<option value="0" selected="">Which language?</option>
 														<option value="1"> Russian </option>
@@ -257,7 +259,7 @@
 												</div>
 												<div class="form-group col-lg-12">
 													<input type="file" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control inp-border" name="phone" id="phone" placeholder="Your Phone..." required>
-												</div>
+												</div> -->
 											</form>
 										</div>
 										<div class="modal-footer">
